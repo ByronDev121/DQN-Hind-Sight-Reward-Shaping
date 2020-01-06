@@ -1,7 +1,7 @@
-DQN-Hind-Sight-Reward-Shaping
-===============
+#DQN-Hind-Sight-Reward-Shaping
 
 [[toc]]
+
 
 Hind Sight Reward Shaping is a simple and effective reward shaping technique that exploits the fundamentals of the Bellman equation and experience replay in current state-of the-art Deep Reinforcement Learning algorithms like DQN.
 
