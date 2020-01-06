@@ -28,18 +28,18 @@ https://www.youtube.com/watch?v=1oY8Qu5maQQ&feature=youtu.be
 
 Usage
 --------------
-# Open Track in AirSim
+## Open Track in AirSim
 Open the airsim application with you track. e.g. (Open the working directory of your AirSim executable on a windows machine)
 ```bash
 AirSim.exe /Game/OvalTrack -windowed
 ```
-# Train Model
+## Train Model
 From the project's directory execute training code in your Anaconda environment
 ```bash
 ~(DQN-HRS)>python3 main.py
 ```
 
-# Run Model
+## Run Model
 From the project's directory execute training code in your Anaconda environment (remember)
 ```bash
 ~(DQN-HRS)>python3 run_agent.py
