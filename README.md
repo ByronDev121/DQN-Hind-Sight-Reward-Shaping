@@ -1,47 +1,51 @@
 DQN-Hind-Sight-Reward-Shaping
 ===============
+Hind Sight Reward Shaping is a simple and effective reward shaping technique that exploits the fundamentals of the Bellman equation and experience replay in current state-of the-art Deep Reinforcement Learning algorithms like DQN.
 
-[![Docs](./public/docs.png)](https://github.com/appstrax/proposal-api)
-[![Board](./public/board.png)](https://github.com/appstrax/proposal-api/projects/1)
-[![Issues](./public/issues.png)](https://github.com/appstrax/proposal-api/issues)
+[![Image](./image.jpg)](https://github.com/ByronDev121/DQN-Hind-Sight-Reward-Shaping/)
 
-Hind Sight Reward Shaping is a simple  and  effective  rewardshaping technique that exploits the fundamentals of the Bellman equation and experience replay in current state-of the-art Deep Reinforcement Learning algorithms like DQN.
-
-[![Appstrax Image](./public/appstrax-logo.jpg)](https://github.com/appstrax/proposal-api)
-
-
-Building Air Sim
+Building AirSim
 --------------
 This project uses Microsoft's AirSim simulator for drones, cars and more, built on Unreal Engine. Follow the build instructions [here](https://microsoft.github.io/AirSim/).
 
+Creating your environment
+--------------
+To install all dependecies required for this project there is a requirements.txt file included in the repository. Simply create a new enviroment in anaconda or what ever container manager you are using and run the following command:
 
+```bash
+pip install -r requirements.txt 
+```
+
+Creating your own track in Unreal Engine
+--------------
+To create your own track I suggest following [this](https://www.youtube.com/watch?v=wR0fH6O9jD8) tutorial. When you have built your track, add it into your AirSim project and build from source. 
+
+I found these quite helpfull:
+https://microsoft.github.io/AirSim/docs/unreal_custenv/
+https://www.youtube.com/watch?v=1oY8Qu5maQQ&feature=youtu.be
 
 Usage
 --------------
-1. Create category tree
+1. Open the airsim application with you track. e.g. (Open the working directory of your AirSim executable on a windows machine)
+```bash
+AirSim.exe /Game/OvalTrack -windowed
 ```
-TODO: Instructions to create category tree and how to use it: read/update/delete - as well as parent-child mapping
+2. From the project's directory execute training code in your Anaconda environment
 ```
-2. Create fetaures at a node in the category tree
-```
-TODO: Instructions to create a feature and how to use it: read/update/delete - as well as category-feature mapping
-```
-3. Create Request for proposal
-```
-TODO: Instructions to create a request for proposal and how to use it: read/update/delete - as well as proposal-feature mapping
+~(DQN-HRS)>python3 main.py
 ```
 
-F.A.Q.
+Conference Paper
 ------
+This research has been publish under IEEE. Find the paper here. 
 
-TODO: Link this to the FAQ in our website:
-[FAQ](http://carla.readthedocs.io/en/latest/faq/).
+Video Results
+------
+The video result can be found [here](https://www.youtube.com/watch?v=dJN05nHdvpE&t=311s)
 
 License
 -------
 
-The Proposal API specific code is distributed under SOME License.
-
-The Proposal API specific assets are distributed under SOME License.
+The code in this repository is distributed under the MIT License.
 
 
